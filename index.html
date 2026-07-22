@@ -117,7 +117,7 @@
     .proj-stat-lbl { font-size:.72rem; color:var(--muted); margin-top:3px; }
 
     /* SKILLS */
-    .sk-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .sk-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
     .sk-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:20px; padding:30px 26px; transition:all .3s; }
     .sk-card:hover { background:rgba(255,255,255,.07); border-color:rgba(255,255,255,.15); transform:translateY(-4px); }
     .sk-icon { width:46px; height:46px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; margin-bottom:18px; }
@@ -167,7 +167,7 @@
       .hero-inner { grid-template-columns:1fr; }
       .hero-card { display:none; }
       .proj-grid { grid-template-columns:1fr; }
-      .sk-grid { grid-template-columns:1fr 1fr; }
+      .sk-grid { grid-template-columns:1fr; }
     }
     @media (max-width:600px) {
       .section { padding:56px 20px; }
@@ -219,6 +219,7 @@
       <h1 class="hero-name">Battogtokh<br><span class="accent">Geserbatar</span></h1>
       <p class="hero-role" data-i18n="role">Mobile App Developer &amp; Entrepreneur</p>
       <div class="contact-row">
+        <a href="tel:010-8107-3920" class="contact-item"><i class="fas fa-phone"></i> 010-8107-3920</a>
         <a href="tel:72205032" class="contact-item"><i class="fas fa-phone"></i> 72205032</a>
         <a href="mailto:gg.togtokh@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> gg.togtokh@gmail.com</a>
         <span class="contact-item"><i class="fas fa-map-marker-alt"></i> <span data-i18n="location">Seoul, South Korea</span></span>
@@ -241,6 +242,7 @@
         <div class="card-item"><i class="fas fa-university"></i><span data-i18n="card_school">Ider University — Law (Distance)</span></div>
         <div class="card-item"><i class="fas fa-calendar"></i><span data-i18n="card_grad">Expected 2027</span></div>
         <div class="card-item"><i class="fas fa-map-marker-alt"></i><span data-i18n="card_loc">Seoul, South Korea</span></div>
+        <div class="card-item"><i class="fas fa-birthday-cake"></i><span data-i18n="card_dob">Born May 29, 2001</span></div>
       </div>
       <div class="card-section">
         <div class="card-label" data-i18n="card_apps">Apps Shipped</div>
@@ -257,13 +259,13 @@
           </div>
           <div class="lang-pip">
             <span class="lang-pip-name" data-i18n="lang_ko">Korean</span>
-            <div class="pip-track"><div class="pip-fill" data-w="80"></div></div>
-            <span class="lang-pip-lvl" data-i18n="fluent">Fluent</span>
+            <div class="pip-track"><div class="pip-fill" data-w="70"></div></div>
+            <span class="lang-pip-lvl" data-i18n="topik34">TOPIK 3-4</span>
           </div>
           <div class="lang-pip">
             <span class="lang-pip-name" data-i18n="lang_en">English</span>
-            <div class="pip-track"><div class="pip-fill" data-w="55"></div></div>
-            <span class="lang-pip-lvl" data-i18n="intermediate">Intermediate</span>
+            <div class="pip-track"><div class="pip-fill" data-w="45"></div></div>
+            <span class="lang-pip-lvl" data-i18n="b1lvl">B1</span>
           </div>
         </div>
       </div>
@@ -383,33 +385,47 @@
     <div class="sk-grid">
       <div class="sk-card reveal">
         <div class="sk-icon rose"><i class="fas fa-code"></i></div>
-        <h3 class="sk-card-title" data-i18n="sk1_title">Mobile Development</h3>
+        <h3 class="sk-card-title" data-i18n="sk1_title">Development &amp; Design</h3>
         <div class="sk-tags">
           <span class="sk-tag hi">React Native</span>
           <span class="sk-tag hi">Expo</span>
+          <span class="sk-tag hi" data-i18n="sk1_t1">App Development</span>
+          <span class="sk-tag hi" data-i18n="sk1_t2">Web Development</span>
+          <span class="sk-tag" data-i18n="sk1_t3">UX / UI Design</span>
           <span class="sk-tag">JavaScript</span>
           <span class="sk-tag">Firebase</span>
-          <span class="sk-tag">AsyncStorage</span>
         </div>
       </div>
       <div class="sk-card reveal d1">
-        <div class="sk-icon blue"><i class="fas fa-briefcase"></i></div>
-        <h3 class="sk-card-title" data-i18n="sk2_title">Business &amp; Entrepreneurship</h3>
+        <div class="sk-icon purple"><i class="fas fa-palette"></i></div>
+        <h3 class="sk-card-title" data-i18n="sk2_title">Creative Tools</h3>
         <div class="sk-tags">
-          <span class="sk-tag hi" data-i18n="sk2_t1">Independent Selling</span>
-          <span class="sk-tag hi" data-i18n="sk2_t2">Product Thinking</span>
-          <span class="sk-tag" data-i18n="sk2_t3">Market Awareness</span>
-          <span class="sk-tag" data-i18n="sk2_t4">Self-management</span>
+          <span class="sk-tag hi" data-i18n="sk2_t1">Canva — Professional</span>
+          <span class="sk-tag hi" data-i18n="sk2_t2">Video Editing — Near-Pro</span>
+          <span class="sk-tag" data-i18n="sk2_t3">Content Creation</span>
+          <span class="sk-tag" data-i18n="sk2_t4">Graphic Design</span>
         </div>
       </div>
       <div class="sk-card reveal d2">
-        <div class="sk-icon purple"><i class="fas fa-brain"></i></div>
-        <h3 class="sk-card-title" data-i18n="sk3_title">Problem Solving</h3>
+        <div class="sk-icon green"><i class="fas fa-robot"></i></div>
+        <h3 class="sk-card-title" data-i18n="sk3_title">AI — Master Level</h3>
         <div class="sk-tags">
-          <span class="sk-tag hi" data-i18n="sk3_t1">Analytical Thinking</span>
-          <span class="sk-tag" data-i18n="sk3_t2">Self-discipline</span>
-          <span class="sk-tag" data-i18n="sk3_t3">Fast Learning</span>
-          <span class="sk-tag" data-i18n="sk3_t4">Team Collaboration</span>
+          <span class="sk-tag hi" data-i18n="sk3_t1">Strategic AI Use</span>
+          <span class="sk-tag hi" data-i18n="sk3_t2">Prompt Engineering</span>
+          <span class="sk-tag">ChatGPT</span>
+          <span class="sk-tag">Claude</span>
+          <span class="sk-tag">Midjourney</span>
+          <span class="sk-tag" data-i18n="sk3_t3">Right Tool for Each Task</span>
+        </div>
+      </div>
+      <div class="sk-card reveal d3">
+        <div class="sk-icon blue"><i class="fas fa-briefcase"></i></div>
+        <h3 class="sk-card-title" data-i18n="sk4_title">Business &amp; Entrepreneurship</h3>
+        <div class="sk-tags">
+          <span class="sk-tag hi" data-i18n="sk4_t1">Independent Selling</span>
+          <span class="sk-tag hi" data-i18n="sk4_t2">Product Thinking</span>
+          <span class="sk-tag" data-i18n="sk4_t3">Market Awareness</span>
+          <span class="sk-tag" data-i18n="sk4_t4">Self-management</span>
         </div>
       </div>
     </div>
@@ -442,6 +458,7 @@
     <p class="ft-sub" data-i18n="ft_sub">Open to opportunities in mobile development, tech startups, and more</p>
     <div class="ft-contacts">
       <a href="mailto:gg.togtokh@gmail.com" class="ft-contact"><i class="fas fa-envelope"></i> gg.togtokh@gmail.com</a>
+      <a href="tel:010-8107-3920" class="ft-contact"><i class="fas fa-phone"></i> 010-8107-3920</a>
       <a href="tel:72205032" class="ft-contact"><i class="fas fa-phone"></i> 72205032</a>
       <a href="https://github.com/Togtokh" target="_blank" class="ft-contact"><i class="fab fa-github"></i> github.com/Togtokh</a>
     </div>
@@ -465,7 +482,8 @@ const T = {
     card_edu: 'Education', card_school: 'Ider University — Law (Distance)', card_grad: 'Expected 2027', card_loc: 'Seoul, South Korea',
     card_apps: 'Apps Shipped', card_langs: 'Languages',
     lang_mn: 'Mongolian', lang_ko: 'Korean', lang_en: 'English',
-    native: 'Native', fluent: 'Fluent', intermediate: 'Intermediate',
+    native: 'Native', topik34: 'TOPIK 3-4', b1lvl: 'B1',
+    card_dob: 'Born May 29, 2001',
     proj_eyebrow: 'Independent Projects', proj_title: 'Apps I Built & Shipped',
     p1_tag: 'Korean Learning App',
     p1_desc: 'A full Korean language learning app built for Mongolian speakers. Features flashcards, match pairs, fill-in-the-blank, speaking exercises, structured lessons across 8+ sections, and a streak system — all built solo from scratch.',
@@ -478,9 +496,14 @@ const T = {
     p3_t1: 'Educational Content', p3_t2: 'Video Editing', p3_t3: 'Organic Growth',
     p3_s1: 'Followers in 14 days', p3_s2: 'Likes', p3_s3: 'Days',
     sk_eyebrow: 'What I Bring', sk_title: 'Skills & Strengths',
-    sk1_title: 'Mobile Development', sk2_title: 'Business & Entrepreneurship', sk3_title: 'Problem Solving',
-    sk2_t1: 'Independent Selling', sk2_t2: 'Product Thinking', sk2_t3: 'Market Awareness', sk2_t4: 'Self-management',
-    sk3_t1: 'Analytical Thinking', sk3_t2: 'Self-discipline', sk3_t3: 'Fast Learning', sk3_t4: 'Team Collaboration',
+    sk1_title: 'Development & Design',
+    sk1_t1: 'App Development', sk1_t2: 'Web Development', sk1_t3: 'UX / UI Design',
+    sk2_title: 'Creative Tools',
+    sk2_t1: 'Canva — Professional', sk2_t2: 'Video Editing — Near-Pro', sk2_t3: 'Content Creation', sk2_t4: 'Graphic Design',
+    sk3_title: 'AI — Master Level',
+    sk3_t1: 'Strategic AI Use', sk3_t2: 'Prompt Engineering', sk3_t3: 'Right Tool for Each Task',
+    sk4_title: 'Business & Entrepreneurship',
+    sk4_t1: 'Independent Selling', sk4_t2: 'Product Thinking', sk4_t3: 'Market Awareness', sk4_t4: 'Self-management',
     edu_eyebrow: 'Education', edu_title: 'Academic Background',
     edu_school: 'Ider University', edu_degree: 'Bachelor of Laws (LLB) — Distance Learning',
     edu_year: '2023 – 2027 (Expected)', edu_city: 'Ulaanbaatar, Mongolia · Studying from Seoul',
@@ -497,7 +520,8 @@ const T = {
     card_edu: '학력', card_school: '이데르 대학교 — 법학과 (원격)', card_grad: '2027년 졸업 예정', card_loc: '대한민국 서울',
     card_apps: '출시 앱', card_langs: '언어',
     lang_mn: '몽골어', lang_ko: '한국어', lang_en: '영어',
-    native: '모국어', fluent: '유창', intermediate: '중급',
+    native: '모국어', topik34: 'TOPIK 3-4', b1lvl: 'B1',
+    card_dob: '2001년 5월 29일생',
     proj_eyebrow: '개인 프로젝트', proj_title: '직접 개발하고 출시한 앱',
     p1_tag: '한국어 학습 앱',
     p1_desc: '몽골어 사용자를 위한 한국어 학습 앱. 플래시카드, 매칭, 빈칸 채우기, 스피킹, 8개 이상의 섹션으로 구성된 체계적인 수업과 스트릭 시스템을 포함하며 처음부터 끝까지 혼자 개발했습니다.',
@@ -510,9 +534,14 @@ const T = {
     p3_t1: '교육 콘텐츠', p3_t2: '영상 편집', p3_t3: '오가닉 성장',
     p3_s1: '14일 만에 팔로워', p3_s2: '좋아요', p3_s3: '일',
     sk_eyebrow: '핵심 역량', sk_title: '기술 & 강점',
-    sk1_title: '모바일 개발', sk2_title: '비즈니스 & 창업', sk3_title: '문제 해결',
-    sk2_t1: '개인 판매', sk2_t2: '제품 기획', sk2_t3: '시장 이해', sk2_t4: '자기 관리',
-    sk3_t1: '논리적 사고', sk3_t2: '자기 규율', sk3_t3: '빠른 학습', sk3_t4: '팀 협업',
+    sk1_title: '개발 & 디자인',
+    sk1_t1: '앱 개발', sk1_t2: '웹 개발', sk1_t3: 'UX / UI 디자인',
+    sk2_title: '크리에이티브 툴',
+    sk2_t1: 'Canva — 전문가 수준', sk2_t2: '영상 편집 — 준전문가', sk2_t3: '콘텐츠 제작', sk2_t4: '그래픽 디자인',
+    sk3_title: 'AI — 마스터 수준',
+    sk3_t1: '전략적 AI 활용', sk3_t2: '프롬프트 엔지니어링', sk3_t3: '상황에 맞는 AI 선택',
+    sk4_title: '비즈니스 & 창업',
+    sk4_t1: '개인 판매', sk4_t2: '제품 기획', sk4_t3: '시장 이해', sk4_t4: '자기 관리',
     edu_eyebrow: '학력', edu_title: '학업 배경',
     edu_school: '이데르 대학교', edu_degree: '법학사 (LLB) — 원격 교육',
     edu_year: '2023 – 2027 (졸업 예정)', edu_city: '몽골 울란바토르 · 서울에서 수학 중',
@@ -529,7 +558,8 @@ const T = {
     card_edu: 'Боловсрол', card_school: 'Идэр их сургууль — Хууль (Эчнээ)', card_grad: '2027 онд төгсөх', card_loc: 'Сөүл, БНСУ',
     card_apps: 'Гаргасан аппууд', card_langs: 'Хэл мэдлэг',
     lang_mn: 'Монгол', lang_ko: 'Солонгос', lang_en: 'Англи',
-    native: 'Төрөлх', fluent: 'Чөлөөтэй', intermediate: 'Дунд',
+    native: 'Төрөлх', topik34: 'TOPIK 3-4', b1lvl: 'B1',
+    card_dob: '2001 оны 05-р сарын 29',
     proj_eyebrow: 'Бие даасан төслүүд', proj_title: 'Миний бүтээсэн аппууд',
     p1_tag: 'Солонгос хэл сурах апп',
     p1_desc: 'Монгол хэрэглэгчдэд зориулсан бүрэн солонгос хэлний сургалтын апп. Флэшкард, хосолсон дасгал, цооврын дасгал, ярих дасгал, 8+ хэсгийн хичээл, streak систем — бүгдийг нь эхнээс нь бие дааж хийсэн.',
@@ -542,9 +572,14 @@ const T = {
     p3_t1: 'Боловсролын контент', p3_t2: 'Видео засвар', p3_t3: 'Органик өсөлт',
     p3_s1: '14 хоногт дагагч', p3_s2: 'Лайк', p3_s3: 'Хоног',
     sk_eyebrow: 'Чадварууд', sk_title: 'Ур чадвар & Давуу талууд',
-    sk1_title: 'Мобайл хөгжүүлэлт', sk2_title: 'Бизнес & Аж ахуй', sk3_title: 'Асуудал шийдвэрлэх',
-    sk2_t1: 'Бие дааж худалдаа хийх', sk2_t2: 'Бүтээгдэхүүний сэтгэлгээ', sk2_t3: 'Зах зээл мэдрэх', sk2_t4: 'Бие дааж удирдах',
-    sk3_t1: 'Аналитик сэтгэлгээ', sk3_t2: 'Хувийн сахилга бат', sk3_t3: 'Хурдан суралцах', sk3_t4: 'Багаар ажиллах',
+    sk1_title: 'Хөгжүүлэлт & Дизайн',
+    sk1_t1: 'Апп хөгжүүлэх', sk1_t2: 'Вэбсайт хийх', sk1_t3: 'UX / UI оновчлох',
+    sk2_title: 'Бүтээлч хэрэгслүүд',
+    sk2_t1: 'Canva — Мэргэжлийн түвшин', sk2_t2: 'Видео засвар — Бараг мэргэжлийн', sk2_t3: 'Контент бүтээх', sk2_t4: 'График дизайн',
+    sk3_title: 'AI — Мастер түвшин',
+    sk3_t1: 'Стратегийн AI ашиглалт', sk3_t2: 'Промпт инженеринг', sk3_t3: 'Аль AI-г хэзээ яаж ашиглахаа мэддэг',
+    sk4_title: 'Бизнес & Аж ахуй',
+    sk4_t1: 'Бие дааж худалдаа хийх', sk4_t2: 'Бүтээгдэхүүний сэтгэлгээ', sk4_t3: 'Зах зээл мэдрэх', sk4_t4: 'Бие дааж удирдах',
     edu_eyebrow: 'Боловсрол', edu_title: 'Сургалтын мэдээлэл',
     edu_school: 'Идэр их сургууль', edu_degree: 'Хуульч (LLB) — Эчнээ анги',
     edu_year: '2023 – 2027 (Төгсөх)', edu_city: 'Улаанбаатар, Монгол · Сөүлээс суралцаж байна',
