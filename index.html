@@ -98,9 +98,9 @@
     .proj-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
     .proj-card { background:#fff; border-radius:22px; overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,.07); transition:transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s; border:1px solid rgba(0,0,0,.05); }
     .proj-card:hover { transform:translateY(-6px); box-shadow:0 24px 64px rgba(0,0,0,.13); }
-    .proj-card-img { width:100%; height:420px; object-fit:cover; object-position:top; display:block; transition:transform .6s ease; }
+    .proj-card-img { width:100%; height:560px; object-fit:cover; object-position:top; display:block; transition:transform .6s ease; }
     .proj-card:hover .proj-card-img { transform:scale(1.04); }
-    .proj-card-img-duo { display:grid; grid-template-columns:1fr 1fr; height:420px; overflow:hidden; }
+    .proj-card-img-duo { display:grid; grid-template-columns:1fr 1fr; height:560px; overflow:hidden; }
     .proj-card-img-duo img { width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s ease; display:block; }
     .proj-card:hover .proj-card-img-duo img { transform:scale(1.05); }
     .proj-card-header { padding:24px 28px 0; }
@@ -373,6 +373,41 @@
         </div>
       </div>
 
+      <div class="proj-card reveal d3" style="grid-column:1/-1;">
+        <div class="proj-card-img-duo">
+          <img src="2.jpg" alt="TikTok Nikule_31">
+          <img src="4.jpg" alt="Instagram Monglish_LearnKorean">
+        </div>
+        <div class="proj-card-header">
+          <div class="proj-tag" data-i18n="p4_tag">Monglish Social Media · Nikule_31 &amp; Monglish_LearnKorean</div>
+          <h3 class="proj-card-title" data-i18n="p4_title">Monglish — Social Media Marketing</h3>
+          <p class="proj-card-desc" data-i18n="p4_desc">Managed and grew two dedicated social media accounts for the Monglish app — TikTok @Nikule_31 (English learning content) and Instagram @Monglish_LearnKorean (Korean learning content). Built organic communities from scratch with no paid promotion, reaching thousands of followers across both platforms.</p>
+        </div>
+        <div class="proj-card-body">
+          <div class="tech-row">
+            <span class="tech-tag">TikTok</span>
+            <span class="tech-tag">Instagram</span>
+            <span class="tech-tag" data-i18n="p4_t1">Content Strategy</span>
+            <span class="tech-tag" data-i18n="p4_t2">Video Editing</span>
+            <span class="tech-tag" data-i18n="p4_t3">Organic Growth</span>
+          </div>
+          <div class="proj-stat-row">
+            <div class="proj-stat">
+              <div class="proj-stat-val">3,030</div>
+              <div class="proj-stat-lbl" data-i18n="p4_s1">TikTok Followers</div>
+            </div>
+            <div class="proj-stat">
+              <div class="proj-stat-val">26.3K</div>
+              <div class="proj-stat-lbl" data-i18n="p4_s2">TikTok Likes</div>
+            </div>
+            <div class="proj-stat">
+              <div class="proj-stat-val">2,853</div>
+              <div class="proj-stat-lbl" data-i18n="p4_s3">Instagram Followers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -495,6 +530,11 @@ const T = {
     p3_desc: 'Launched an educational TikTok channel focused on English learning for Mongolian speakers — covering grammar, vocabulary, IELTS tips, and everyday expressions. Grew to 222 followers and 1,867 likes organically within just 14 days, with no paid promotion.',
     p3_t1: 'Educational Content', p3_t2: 'Video Editing', p3_t3: 'Organic Growth',
     p3_s1: 'Followers in 14 days', p3_s2: 'Likes', p3_s3: 'Days',
+    p4_tag: 'Monglish Social Media · Nikule_31 & Monglish_LearnKorean',
+    p4_title: 'Monglish — Social Media Marketing',
+    p4_desc: 'Managed and grew two dedicated social media accounts for the Monglish app — TikTok @Nikule_31 (English learning content) and Instagram @Monglish_LearnKorean (Korean learning content). Built organic communities from scratch with no paid promotion, reaching thousands of followers across both platforms.',
+    p4_t1: 'Content Strategy', p4_t2: 'Video Editing', p4_t3: 'Organic Growth',
+    p4_s1: 'TikTok Followers', p4_s2: 'TikTok Likes', p4_s3: 'Instagram Followers',
     sk_eyebrow: 'What I Bring', sk_title: 'Skills & Strengths',
     sk1_title: 'Development & Design',
     sk1_t1: 'App Development', sk1_t2: 'Web Development', sk1_t3: 'UX / UI Design',
@@ -533,6 +573,11 @@ const T = {
     p3_desc: '몽골어 사용자를 위한 영어 학습 TikTok 채널 운영 — 문법, 어휘, IELTS 팁, 일상 표현 등 다양한 콘텐츠 제작. 유료 광고 없이 단 14일 만에 팔로워 222명, 좋아요 1,867개를 유기적으로 달성.',
     p3_t1: '교육 콘텐츠', p3_t2: '영상 편집', p3_t3: '오가닉 성장',
     p3_s1: '14일 만에 팔로워', p3_s2: '좋아요', p3_s3: '일',
+    p4_tag: '몽글리시 SNS · Nikule_31 & Monglish_LearnKorean',
+    p4_title: 'Monglish — 소셜 미디어 마케팅',
+    p4_desc: 'Monglish 앱을 위해 두 개의 전용 SNS 계정을 운영하고 성장시켰습니다 — TikTok @Nikule_31 (영어 학습 콘텐츠)와 Instagram @Monglish_LearnKorean (한국어 학습 콘텐츠). 유료 광고 없이 유기적으로 수천 명의 팔로워를 확보했습니다.',
+    p4_t1: '콘텐츠 전략', p4_t2: '영상 편집', p4_t3: '오가닉 성장',
+    p4_s1: 'TikTok 팔로워', p4_s2: 'TikTok 좋아요', p4_s3: 'Instagram 팔로워',
     sk_eyebrow: '핵심 역량', sk_title: '기술 & 강점',
     sk1_title: '개발 & 디자인',
     sk1_t1: '앱 개발', sk1_t2: '웹 개발', sk1_t3: 'UX / UI 디자인',
@@ -571,6 +616,11 @@ const T = {
     p3_desc: 'Монгол хэрэглэгчдэд зориулсан англи хэл сургах TikTok суваг — дүрэм, үгийн сан, IELTS зөвлөмж, өдөр тутмын хэллэг. Төлбөртэй сурталчилгаагүйгээр ердөө 14 хоногт 222 дагагч, 1,867 лайк цуглуулсан.',
     p3_t1: 'Боловсролын контент', p3_t2: 'Видео засвар', p3_t3: 'Органик өсөлт',
     p3_s1: '14 хоногт дагагч', p3_s2: 'Лайк', p3_s3: 'Хоног',
+    p4_tag: 'Monglish Социал Медиа · Nikule_31 & Monglish_LearnKorean',
+    p4_title: 'Monglish — Социал Медиа Маркетинг',
+    p4_desc: 'Monglish аппын тусгай 2 социал медиа хаягийг удирдаж өсгөсөн — TikTok @Nikule_31 (Англи хэл сургах контент) болон Instagram @Monglish_LearnKorean (Солонгос хэл сургах контент). Төлбөртэй сурталчилгаагүйгээр олон мянган дагагчтай болсон.',
+    p4_t1: 'Контент стратеги', p4_t2: 'Видео засвар', p4_t3: 'Органик өсөлт',
+    p4_s1: 'TikTok дагагч', p4_s2: 'TikTok лайк', p4_s3: 'Instagram дагагч',
     sk_eyebrow: 'Чадварууд', sk_title: 'Ур чадвар & Давуу талууд',
     sk1_title: 'Хөгжүүлэлт & Дизайн',
     sk1_t1: 'Апп хөгжүүлэх', sk1_t2: 'Вэбсайт хийх', sk1_t3: 'UX / UI оновчлох',
