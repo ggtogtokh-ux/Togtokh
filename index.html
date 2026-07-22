@@ -43,7 +43,7 @@
         radial-gradient(ellipse 30% 40% at 10% 80%,rgba(59,130,246,.13) 0%,transparent 55%),
         radial-gradient(ellipse 25% 35% at 85% 10%,rgba(233,61,130,.12) 0%,transparent 50%);
     }
-    .hero-inner { max-width:1100px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 400px; gap:72px; align-items:center; position:relative; z-index:1; }
+    .hero-inner { max-width:1100px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 360px; gap:72px; align-items:start; padding-top:20px; position:relative; z-index:1; }
     .hero-content { animation:fadeUp .8s ease-out forwards; }
     .hero-eyebrow { display:inline-flex; align-items:center; gap:10px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); color:rgba(255,255,255,.75); padding:8px 18px; border-radius:50px; font-size:.73rem; font-weight:700; letter-spacing:.9px; text-transform:uppercase; margin-bottom:28px; }
     .eyebrow-dot { width:7px; height:7px; border-radius:50%; background:var(--rose); flex-shrink:0; animation:blink 1.8s ease-in-out infinite; }
@@ -61,8 +61,13 @@
     .btn-ghost { display:inline-flex; align-items:center; gap:9px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.14); color:#fff; padding:13px 24px; border-radius:11px; font-weight:600; font-size:.87rem; text-decoration:none; transition:all .25s; }
     .btn-ghost:hover { background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.25); transform:translateY(-2px); }
 
+    /* RIGHT COLUMN */
+    .hero-right-col { display:flex; flex-direction:column; gap:20px; animation:fadeUp .9s ease-out .2s forwards; }
+    .hero-photo-wrap { border-radius:20px; overflow:hidden; border:2px solid rgba(255,255,255,.12); box-shadow:0 20px 60px rgba(0,0,0,.4); flex-shrink:0; }
+    .hero-photo { width:100%; height:300px; object-fit:cover; object-position:center 15%; display:block; }
+
     /* STAT CARD RIGHT */
-    .hero-card { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); border-radius:24px; padding:36px; animation:fadeUp .9s ease-out .2s forwards; }
+    .hero-card { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); border-radius:24px; padding:28px; }
     .card-section { margin-bottom:28px; }
     .card-section:last-child { margin-bottom:0; }
     .card-label { font-size:.65rem; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:var(--rose); margin-bottom:12px; }
@@ -226,6 +231,10 @@
       </div>
     </div>
 
+    <div class="hero-right-col">
+    <div class="hero-photo-wrap">
+      <img src="7.jpg" alt="Battogtokh Geserbatar" class="hero-photo">
+    </div>
     <div class="hero-card">
       <div class="card-section">
         <div class="card-label" data-i18n="card_edu">Education</div>
@@ -258,6 +267,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </section>
